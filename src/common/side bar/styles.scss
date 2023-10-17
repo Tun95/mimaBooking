@@ -1,0 +1,55 @@
+.drawer_btn_icon {
+  color: var(--color-gray) !important;
+}
+.drawer_btn_icon:hover {
+  background: transparent !important;
+}
+
+.drawer_list {
+  font-size: 14px !important;
+  color: var(--color-gray);
+}
+.drawer_icon {
+  font-size: 20px !important;
+}
+.drawer_menu {
+  overflow: hidden !important;
+}
+.drawer {
+  overflow: hidden;
+  .drawer_list_span {
+    margin-top: 20%;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+
+  .user_menu {
+    position: relative;
+    left: 0px;
+    margin-top: 20px;
+    .user_img {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .icon {
+      z-index: 1;
+      bottom: 20px;
+    }
+  }
+  .log_height {
+    overflow: hidden;
+    .log {
+      width: 100%;
+      .logout {
+        left: 15px;
+        top: 5px;
+        span {
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+}

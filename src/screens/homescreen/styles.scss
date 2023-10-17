@@ -1,0 +1,222 @@
+.dashboard {
+  flex: 5;
+  overflow: hidden;
+  padding: 0px 30px;
+  .banner {
+    margin-top: 30px;
+    .content {
+      .img {
+        height: 180px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+      .filter {
+        position: relative;
+        bottom: 30px;
+        .box {
+          width: 85%;
+          background-color: var(--color-white);
+          padding: 20px 30px;
+          border-radius: 20px;
+          gap: 20px;
+          .select {
+            width: 100%;
+          }
+          .icon {
+            color: var(--color-light-gray);
+          }
+          .select_search {
+            width: 100%;
+          }
+          .date {
+            .date_picker {
+              width: 90%;
+              border: none;
+              outline: none !important;
+              border-color: var(--color-white);
+            }
+            .ant-calendar-picker-icon {
+              display: none;
+            }
+          }
+          .location,
+          .date {
+            border-right: 1px solid var(--color-light-gray);
+          }
+          .location,
+          .date,
+          .user {
+            width: 100%;
+            margin: 0px 10px;
+          }
+          .btn {
+            button {
+              background-color: var(--color-text);
+              color: var(--color-white);
+              padding: 15px 25px;
+              border-radius: 10px;
+              cursor: pointer;
+            }
+          }
+          /*======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+          @media screen and (max-width: 1100px) {
+            align-items: flex-start;
+            .select {
+              flex-wrap: wrap;
+              .location,
+              .date {
+                border: none;
+              }
+            }
+          }
+          /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+          @media screen and (max-width: 520px) {
+            flex-direction: column;
+            .btn {
+              width: 100%;
+              button {
+                width: 100%;
+                padding: 8px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    .slick-slider {
+      margin-top: 20px;
+      height: 100%;
+    }
+    .list {
+      height: 100%;
+      .slider_card {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        margin-right: 10px;
+        padding: 20px 15px;
+        height: 100%;
+        .content {
+          gap: 15px;
+
+          .img {
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+              border-radius: 20px;
+            }
+          }
+          .main_content {
+            .desc {
+              margin: 10px 0px;
+              p {
+                color: var(--color-light-gray);
+                word-wrap: break-word;
+              }
+            }
+          }
+        }
+        /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .offers {
+    margin: 30px 0px;
+
+    .offer_card {
+      margin-top: 20px;
+      .content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        .cards {
+          background-color: var(--color-white);
+          border-radius: 20px;
+          padding: 10px;
+          small {
+            color: var(--color-light-gray);
+          }
+          .img {
+            height: 120px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 20px;
+            }
+          }
+          .text {
+            padding: 0px 5px;
+            .name {
+              margin-top: 20px;
+            }
+            .location {
+              margin: 5px 0px;
+            }
+            .btn {
+              button {
+                background-color: transparent;
+                border: 1px solid var(--color-light-gray);
+                width: 30px;
+                height: 30px;
+                border-radius: 10px;
+                cursor: pointer;
+                .icon {
+                  position: relative;
+                  top: 1px;
+                  color: var(--color-light-gray);
+                  font-size: 20px;
+                }
+                transition: var(--transition);
+                &:hover {
+                  background-color: var(--color-text);
+                  color: var(--color-white);
+                  border-color: var(--color-text);
+                  .icon {
+                    transition: var(--transition);
+                    color: var(--color-white);
+                  }
+                }
+              }
+            }
+          }
+        }
+        /*======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+        @media screen and (max-width: 1300px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        /*======= MEDIA QUERIES (MEDIUM DEVICES) =======*/
+        @media screen and (max-width: 1100px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+        @media screen and (max-width: 900px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+        @media screen and (max-width: 375px) {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  .explore {
+    margin-bottom: 50px;
+  }
+
+  /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+  @media screen and (max-width: 745px) {
+    padding: 0px 15px;
+  }
+}

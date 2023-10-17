@@ -1,0 +1,96 @@
+.navigation {
+  flex: 5;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  width: 100%;
+
+  .content {
+    padding: 20px 30px;
+    width: 100%;
+    gap: 20px;
+    .search_box {
+      .icon {
+        position: relative;
+        left: 35px;
+        color: var(--color-light-gray);
+      }
+      input {
+        border: 1px solid var(--color-light-gray);
+        padding: 10px;
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 35px;
+        color: var(--color-gray);
+      }
+    }
+    .date_alarm_menu {
+      .date {
+        margin-right: 30px;
+        color: var(--color-gray);
+      }
+      .alarm_badge {
+        position: relative;
+        .badge {
+          position: absolute;
+          right: 37px;
+          width: 15px;
+          height: 15px;
+          bottom: 20px;
+          background-color: var(--color-red);
+          color: var(--color-white);
+          border-radius: 50%;
+          box-shadow: var(--box-shadow);
+          small {
+            font-size: 12px;
+          }
+        }
+        .alarm {
+          border: 1px solid var(--color-light-gray);
+          width: 30px;
+          height: 30px;
+          border-radius: 8px;
+          cursor: pointer;
+          .icon {
+            color: var(--color-gray);
+          }
+        }
+      }
+      .menu {
+        display: none;
+      }
+    }
+    /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+    @media screen and (max-width: 915px) {
+      .date_alarm_menu {
+        .date {
+          display: none;
+        }
+      }
+    }
+    /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+    @media screen and (max-width: 745px) {
+      padding: 20px 5px;
+      .date_alarm_menu {
+        .menu {
+          display: block;
+        }
+      }
+    }
+    /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+    @media screen and (max-width: 500px) {
+      .search_box {
+        input {
+          width: 100%;
+        }
+      }
+    }
+    /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
+    @media screen and (max-width: 430px) {
+      .date_alarm_menu {
+        .alarm_badge {
+          display: none;
+        }
+      }
+    }
+  }
+}
