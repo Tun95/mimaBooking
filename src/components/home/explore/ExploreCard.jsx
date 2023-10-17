@@ -7,6 +7,15 @@ function formatPrice(price) {
     currency: "USD",
   });
 }
+
+//TEXT TRUNCATE
+function truncateText(text, maxWords) {
+  const words = text.split(" ");
+  if (words.length <= maxWords) {
+    return text;
+  }
+  return words.slice(0, maxWords).join(" ") + " ...";
+}
 function ExploreCard({ index, region }) {
   return (
     <div className="slider_card" key={index}>
@@ -25,7 +34,7 @@ function ExploreCard({ index, region }) {
             </div>
           </div>
           <div className="desc">
-            <p>{region.description}</p>
+            <p>{truncateText(region.description, 8)}</p>
           </div>
           <div className="price">
             <h4>{formatPrice(region.price)}</h4>
