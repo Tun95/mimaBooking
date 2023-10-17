@@ -57,10 +57,6 @@ input::placeholder {
   box-shadow: 0 0.1rem 2rem rgba(30, 30, 30, 0.1);
 }
 
-.badge_shadow {
-  box-shadow: ;
-}
-
 .fa-star {
   color: var(--color-rating);
 }

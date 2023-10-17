@@ -69,12 +69,12 @@ function SideBar() {
     {
       text: <span className="drawer_list">Favorites</span>,
       icon: <FavoriteBorderOutlinedIcon className="drawer_icon" />,
-      to: "/wallets",
+      to: "",
     },
     {
       text: <span className="drawer_list">Setting</span>,
       icon: <SettingsOutlinedIcon className="drawer_icon" />,
-      to: "/transactions",
+      to: "",
     },
   ];
 
